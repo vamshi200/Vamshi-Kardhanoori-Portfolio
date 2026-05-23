@@ -22,23 +22,43 @@ export default function Home() {
   const projects = [
     {
       title: "AI RAG Document Chatbot",
-      desc: "Document Q&A system using RAG, embeddings, vector search, and LLM response generation.",
-      stack: "LangChain • FAISS • Hugging Face • Streamlit",
+      category: "Generative AI Application",
+      desc: "Built a production-style document intelligence system that enables users to upload documents, retrieve relevant context, and generate accurate answers using Retrieval-Augmented Generation.",
+      stack: "LangChain • FAISS • Hugging Face • Streamlit • Python",
+      impact:
+        "Improves document search, contextual Q&A, knowledge discovery, and information accessibility across unstructured documents.",
+      architecture:
+        "Document Upload → Text Extraction → Chunking → Embeddings → FAISS Vector Store → Semantic Retrieval → LLM Response",
     },
     {
       title: "AI Customer Feedback Intelligence",
-      desc: "NLP dashboard for sentiment analysis, theme detection, and customer insight generation.",
-      stack: "Python • NLP • Streamlit • Pandas",
+      category: "NLP Analytics Platform",
+      desc: "Developed an AI-powered feedback analytics platform that analyzes customer comments, detects sentiment patterns, extracts recurring themes, and converts raw feedback into actionable business insights.",
+      stack: "Python • NLP • Streamlit • Pandas • Text Analytics",
+      impact:
+        "Helps teams identify customer pain points, product improvement areas, sentiment trends, and decision-ready insights from large volumes of feedback.",
+      architecture:
+        "Customer Feedback → Text Cleaning → NLP Processing → Sentiment Analysis → Theme Extraction → Insights Dashboard",
     },
     {
-      title: "Real-Time IoT Kinesis Pipeline",
-      desc: "AWS data pipeline for real-time smart manufacturing sensor analytics.",
-      stack: "Kinesis • Lambda • Firehose • S3 • Athena",
+      title: "Real-Time IoT Kinesis Data Pipeline",
+      category: "Cloud Data Engineering",
+      desc: "Designed a real-time AWS streaming pipeline for ingesting, processing, storing, and querying IoT sensor events from smart manufacturing systems.",
+      stack: "AWS Kinesis • Lambda • Firehose • S3 • Athena • QuickSight",
+      impact:
+        "Supports scalable event ingestion, near real-time monitoring, operational analytics, and visibility into manufacturing sensor performance.",
+      architecture:
+        "IoT Sensors → Kinesis Data Streams → Lambda Processing → Firehose Delivery → S3 Data Lake → Athena Queries → QuickSight Dashboard",
     },
     {
-      title: "CI/CD Node.js Microservices",
-      desc: "Cloud DevOps pipeline for automated deployment of containerized microservices.",
-      stack: "Docker • GitHub Actions • Terraform • AWS",
+      title: "CI/CD Pipeline for Node.js Microservices",
+      category: "Cloud DevOps Automation",
+      desc: "Implemented an automated CI/CD workflow for containerized Node.js microservices using Docker, GitHub Actions, Terraform, and AWS cloud deployment practices.",
+      stack: "Node.js • Docker • GitHub Actions • Terraform • AWS",
+      impact:
+        "Improves release reliability, deployment consistency, infrastructure automation, and production-readiness for cloud-native microservices.",
+      architecture:
+        "Code Commit → GitHub Actions → Docker Build → Terraform Provisioning → AWS Deployment → Monitoring",
     },
   ];
 
@@ -304,44 +324,129 @@ export default function Home() {
 
           <section id="experience" className="section">
             <h2>Experience</h2>
-            <div className="grid">
-              <div className="card">
-                <p className="red">Google</p>
-                <h3>Generative AI Engineer</h3>
-                <p>
-                  Built enterprise-grade Generative AI solutions leveraging
-                  Large Language Models, Retrieval-Augmented Generation
-                  pipelines, intelligent agent workflows, prompt engineering,
-                  vector search systems, and scalable AI infrastructure to
-                  deliver production-ready intelligent applications across cloud
-                  environments.
-                </p>
-              </div>
+            <div className="experienceContainer">
 
-              <div className="card">
-                <p className="red">Evernorth Health Services</p>
-                <h3>Machine Learning Engineer</h3>
-                <p>
-                  Developed machine learning and AI-driven healthcare analytics
-                  systems focused on predictive modeling, NLP pipelines,
-                  cloud-native deployments, model optimization, and intelligent
-                  automation solutions to improve operational efficiency and
-                  data-driven decision intelligence.
-                </p>
-              </div>
+<div className="experienceCard">
 
-              <div className="card">
-                <p className="red">AMD</p>
-                <h3>Data Scientist</h3>
-                <p>
-                  Designed advanced data science and machine learning solutions
-                  involving large-scale analytics, statistical modeling,
-                  predictive intelligence, experimentation frameworks, cloud data
-                  platforms, and production ML systems to drive business insights
-                  and scalable engineering impact.
-                </p>
-              </div>
-            </div>
+<div className="experienceYears">
+Apr 2025 – Present
+</div>
+
+<div className="company">
+Google
+</div>
+
+<div className="role">
+Generative AI Engineer
+</div>
+
+<p className="experienceDesc">
+
+Architected enterprise-scale Generative AI solutions leveraging Large Language Models, Retrieval-Augmented Generation frameworks, vector search infrastructure, intelligent agent workflows, and cloud-native AI systems to build production-grade applications that transform unstructured data into actionable intelligence and scalable business value.
+</p>
+
+<div className="techStack">
+
+<span>Python</span>
+
+<span>LLMs</span>
+
+<span>LangChain</span>
+
+<span>RAG</span>
+
+<span>AWS</span>
+
+<span>Azure</span>
+
+<span>PyTorch</span>
+
+</div>
+
+</div>
+
+
+<div className="experienceCard">
+
+<div className="experienceYears">
+May 2024 – Mar 2025
+</div>
+
+<div className="company">
+Evernorth Health Services
+</div>
+
+<div className="role">
+Machine Learning Engineer
+</div>
+
+<p className="experienceDesc">
+
+Designed and deployed machine learning solutions focused on healthcare analytics, predictive intelligence, NLP pipelines, model optimization, and cloud-native AI architectures to improve operational efficiency, automate decision workflows, and enable data-driven healthcare insights at scale.
+</p>
+
+<div className="techStack">
+
+<span>Python</span>
+
+<span>NLP</span>
+
+<span>Machine Learning</span>
+
+<span>AWS</span>
+
+<span>Azure</span>
+
+<span>Healthcare AI</span>
+
+<span>MLOps</span>
+
+</div>
+
+</div>
+
+
+<div className="experienceCard">
+
+<div className="experienceYears">
+Oct 2020 – Sep 2023
+</div>
+
+<div className="company">
+AMD
+</div>
+
+<div className="role">
+Data Scientist
+</div>
+
+<p className="experienceDesc">
+
+Developed large-scale data science and machine learning solutions involving statistical modeling, experimentation frameworks, predictive analytics, cloud-enabled intelligence platforms, and advanced analytical systems to drive business optimization, engineering insights, and scalable data-driven decision making.
+</p>
+
+<div className="techStack">
+
+<span>Python</span>
+
+<span>SQL</span>
+
+<span>Azure</span>
+
+<span>AWS</span>
+
+<span>Machine Learning</span>
+
+<span>GPU Architecture</span>
+
+<span>LLM Inferencing</span>
+
+
+</div>
+
+</div>
+
+</div>
           </section>
 
           <section id="projects" className="section">
@@ -349,16 +454,30 @@ export default function Home() {
             <div className="projectRow">
               {projects.map((project) => (
                 <div className="projectCard" key={project.title}>
+                <div className="projectTop">
                   <div className="thumb">V</div>
-                  <h3>{project.title}</h3>
-                  <p>{project.desc}</p>
-                  <p className="stack">{project.stack}</p>
-                  <div className="miniButtons">
-                    <a href="https://github.com/vamshi200" target="_blank">
-                      GitHub
-                    </a>
-                  </div>
+                  <span>{project.category}</span>
                 </div>
+              
+                <h3>{project.title}</h3>
+              
+                <p>{project.desc}</p>
+              
+                <div className="architectureBox">
+                  <strong>Architecture</strong>
+                  <p>{project.architecture}</p>
+                </div>
+              
+                <p className="impact">{project.impact}</p>
+              
+                <p className="stack">{project.stack}</p>
+              
+                <div className="miniButtons">
+                  <a href="https://github.com/vamshi200" target="_blank">
+                    GitHub
+                  </a>
+                </div>
+              </div>
               ))}
             </div>
           </section>
@@ -371,6 +490,27 @@ export default function Home() {
               <p className="red mt">Open To Work</p>
             </div>
           </section>
+          <section id="feedback" className="feedbackSection">
+  <h2>Share Feedback</h2>
+
+  <p>
+  Always open to connecting with professionals, discussing emerging AI technologies, exploring innovative ideas, and collaborating on opportunities that create meaningful impact through technology.
+  </p>
+
+  <div className="feedbackCard">
+    <textarea
+      placeholder="Write your feedback here..."
+      className="feedbackInput"
+    ></textarea>
+
+    <a
+      href="mailto:vammshi0204@gmail.com?subject=Portfolio Feedback"
+      className="feedbackButton"
+    >
+      Send Feedback
+    </a>
+  </div>
+</section>
 
           <footer className="footer">
             <div className="footerContent">
@@ -576,11 +716,108 @@ export default function Home() {
           font-size: 14px;
         }
 
-        .card:hover, .projectCard:hover {
-          transform: scale(1.03);
-          border-color: #7A0008;
-          box-shadow: 0 0 30px rgba(122,0,8,.35);
-        }
+        .card:hover {
+  transform: scale(1.03);
+  border-color: #7A0008;
+  box-shadow: 0 0 30px rgba(122,0,8,.35);
+}
+
+.experienceContainer {
+display:flex;
+flex-direction:column;
+gap:24px;
+margin-top:35px;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.experienceCard {
+  background: #0b0b0b;
+  border:1px solid rgba(255,255,255,.06);
+  padding: 34px;
+  border-radius: 22px;
+  transition: .35s;
+  position: relative;
+}
+
+.experienceCard:hover {
+  transform: translateY(-5px);
+  border-color: #B20710;
+  box-shadow: 0 0 30px rgba(229,9,20,.18);
+}
+  .techStack{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-top:22px;
+
+}
+
+.techStack span{
+
+background:#111;
+
+border:1px solid rgba(229,9,20,.18);
+
+padding:8px 14px;
+
+border-radius:999px;
+
+font-size:13px;
+
+color:#e0e0e0;
+
+transition:.3s;
+
+}
+
+.techStack span:hover{
+
+background:#7A0008;
+
+transform:translateY(-2px);
+
+box-shadow:
+0 0 15px rgba(229,9,20,.20);
+
+}
+
+
+.company {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.experienceRole {
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.experienceDesc {
+  color: #b8b8b8;
+  line-height: 1.9;
+  max-width: 900px;
+  font-size: 16px;
+}
+
+.experienceYears {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: #777;
+  font-size: 14px;
+}
 
         .card h3, .projectCard h3 {
           color: white;
@@ -689,17 +926,43 @@ export default function Home() {
           color: #B20710;
         }
 
-        .projectRow {
-          display: flex;
-          overflow-x: auto;
-          gap: 24px;
-          padding-bottom: 20px;
-        }
-
         .projectCard {
-          min-width: 360px;
-          max-width: 420px;
-        }
+  width: 100%;
+  min-height: auto;
+  background: #0b0b0b;
+  border: 1px solid rgba(229,9,20,.14);
+  padding: 28px;
+  border-radius: 22px;
+  transition: .35s;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  border-color: #B20710;
+  box-shadow: 0 0 30px rgba(229,9,20,.18);
+}
+
+.projectCard {
+  width: 100%;
+  min-height: auto;
+  background: #0b0b0b;
+  border: 1px solid rgba(229,9,20,.14);
+  padding: 28px;
+  border-radius: 22px;
+  transition: .35s;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  border-color: #B20710;
+  box-shadow: 0 0 30px rgba(229,9,20,.18);
+}
 
         .thumb {
           height: 150px;
@@ -784,6 +1047,68 @@ export default function Home() {
             text-align: center;
           }
         }
+          .feedbackSection {
+  margin: 40px 8vw;
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: 26px;
+  background: radial-gradient(circle at top, rgba(178,7,16,.18), transparent 55%), #080808;
+  border: 1px solid rgba(229,9,20,.16);
+}
+
+.feedbackSection h2 {
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.feedbackSection p {
+  color: #aaa;
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.feedbackCard {
+  margin: 30px auto 0;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feedbackInput {
+  min-height: 150px;
+  resize: vertical;
+  background: #111;
+  border: 1px solid rgba(229,9,20,.18);
+  border-radius: 18px;
+  color: white;
+  padding: 20px;
+  outline: none;
+}
+
+.feedbackInput:focus {
+  border-color: #E50914;
+  box-shadow: 0 0 25px rgba(229,9,20,.18);
+}
+
+.feedbackButton {
+  align-self: center;
+  background: #111;
+  border: 1px solid #333;
+  padding: 13px 26px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.feedbackButton:hover {
+  background: #7A0008;
+  border-color: #B20710;
+  transform: translateY(-3px);
+}
       `}</style>
     </main>
   );
