@@ -241,6 +241,32 @@ export default function Home() {
                   solutions using modern generative AI technologies.
                 </p>
               </div>
+              <div className="card">
+  <h3>Foundation: Introduction to LangChain - Python</h3>
+  <p>
+    Completed LangChain Academy training covering LangChain fundamentals,
+    prompt engineering, LLM orchestration, retrieval workflows, chains, and
+    production-style AI application development using Python.
+  </p>
+</div>
+
+<div className="card">
+  <h3>Foundation: Introduction to LangGraph - Python</h3>
+  <p>
+    Completed LangChain Academy training covering LangGraph fundamentals,
+    agent workflows, graph-based orchestration, state management, multi-step
+    reasoning systems, and production-ready AI agent architecture using Python.
+  </p>
+</div>
+<div className="card">
+  <h3>Fundamentals of Agents — Hugging Face</h3>
+  <p>
+    Completed Hugging Face Agents training covering AI agent fundamentals,
+    tool usage, reasoning workflows, Thought–Action–Observation execution patterns,
+    autonomous agent systems, Large Language Model orchestration, and production-oriented
+    intelligent agent development using modern Generative AI frameworks.
+  </p>
+</div>
             </div>
           </section>
 
