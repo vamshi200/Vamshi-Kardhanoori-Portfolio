@@ -545,7 +545,7 @@ Developed large-scale data science and machine learning solutions involving stat
                 Rights Reserved.
               </div>
 
-              <div className="builtBy">Engineered and Designed by Vamshi</div>
+              
             </div>
           </footer>
         </div>
