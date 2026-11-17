@@ -355,7 +355,7 @@ export default function Home() {
 <div className="experienceCard">
 
 <div className="experienceYears">
-Apr 2025 – Present
+June 2025 – Present
 </div>
 
 <div className="company">
